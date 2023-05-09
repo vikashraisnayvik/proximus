@@ -248,7 +248,7 @@
 }
 
 .user_details_gallery img {
-    height: 242px !important;
+    height: 200px !important;
     width: 100%;
     object-fit: cover;
 }
@@ -391,9 +391,4 @@
     justify-content: center;
     align-items: center;
     height: 50px;
-}
-
-table.dataTable>thead .sorting_asc:before,
-table.dataTable>thead .sorting_desc:after {
-    color: var(--secondary-color) !important;
 }

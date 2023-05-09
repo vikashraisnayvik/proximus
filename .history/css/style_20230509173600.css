@@ -392,8 +392,3 @@
     align-items: center;
     height: 50px;
 }
-
-table.dataTable>thead .sorting_asc:before,
-table.dataTable>thead .sorting_desc:after {
-    color: var(--secondary-color) !important;
-}

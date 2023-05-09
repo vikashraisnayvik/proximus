@@ -1,9 +1,0 @@
-:root {
-    --dark-color: #000000;
-    --light-color: #fff;
-}
-
-.login-box,
-.register-box {
-    width: 762px !important;
-}

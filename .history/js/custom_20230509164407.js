@@ -5,6 +5,5 @@ $(document).ready(function () {
         var a = $(this).text();
         console.log(a)
     })
-
     $("a.iframe").fancybox();
 })

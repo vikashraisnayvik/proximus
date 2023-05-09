@@ -395,5 +395,6 @@
 
 table.dataTable>thead .sorting_asc:before,
 table.dataTable>thead .sorting_desc:after {
+    opacity: 1;
     color: var(--secondary-color) !important;
 }
