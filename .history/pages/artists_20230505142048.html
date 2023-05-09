@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AdminLTE 3 | Dashboard</title>
+
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- Google Font: Source Sans Pro -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <!-- Tempusdominus Bootstrap 4 -->
+        <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+        <!-- iCheck -->
+        <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+        <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+        <!-- overlayScrollbars -->
+        <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+        <link rel="stylesheet" href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    </head>
+
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <div class="wrapper">
+
+            <!-- Preloader -->
+            <div class="preloader flex-column justify-content-center align-items-center">
+                <img class="animation__shake" src="../assests/logo.svg" alt="AdminLTELogo" height="60" width="60">
+            </div>
+
+            <!-- Navbar -->
+
+            <!-- /.navbar -->
+
+            <!-- Main Sidebar Container -->
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <div class="brand_logo">
+                    <a href="dashboard.html" class="">
+                        <img src="../assests/logo.svg" alt="AdminLTE Logo" class="brand-image">
+                    </a>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">Alexander Pierce</a>
+                        </div>
+                    </div>
+                    <!-- Sidebar Menu -->
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                            data-accordion="false">
+                            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                            <li class="nav-item">
+                                <a href="user.html" class="nav-link active">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>User</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="artists.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Artists</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="admins.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Admins</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="app-settings.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>App setting</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="gallery.html" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Gallery</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /.sidebar-menu -->
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <div class="content-header">
+                    <div class="container-fluid">
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1 class="m-0 font-40 font-weight-bold">Dashboard</h1>
+                            </div><!-- /.col -->
+                        </div><!-- /.row -->
+                    </div><!-- /.container-fluid -->
+                </div>
+                <!-- /.content-header -->
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="container-fluid">
+                         <div class="row mb-3 align-items-center">
+                            <div class="col-7">
+                                <p class="font-22 font-weight-normal mb-0">Artists</p>
+                            </div>
+                            <div class="col-5">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div
+                                            class="input-group input-padding search_btn input-border align-items-center">
+                                            <input class="form-control d-flex p-0 bg-transparent border-0" type="search"
+                                                placeholder="Search user" aria-label="Search">
+                                            <div class="input-group-append">
+                                                <span><img src="../assests/search-icon.svg" alt=""></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="custom-select border-main">
+                                            <select>
+                                                <option value="0">Export users</option>
+                                                <option value="1">CSV</option>
+                                                <option value="3">Copy</option>
+                                                <option value="4">Excel</option>
+                                                <option value="5">PDF</option>
+                                                <option value="6">Print</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <!-- /.card-header -->
+                                    <div class="card-body">
+                                        <table id="example2" class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Id</th>
+                                                    <th>Name</th>
+                                                    <th>Amount of pictures</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Stromae</td>
+                                                    <td>michael@pixelstudio.be</td>
+                                                    <td> +32121212</td>
+                                                    <td> 06/04/2023 <br>10:46</td>
+                                                    <td> <img src="../assests/download.svg" alt=""></td>
+                                                </tr>   
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.card-body -->
+                                </div>
+                                <!-- /.card -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                    </div><!-- /.container-fluid -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery -->
+        <script src="../plugins/jquery/jquery.min.js"></script>
+        <!-- jQuery UI 1.11.4 -->
+        <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+        <!-- Bootstrap 4 -->
+        <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../dist/js/adminlte.js"></script>
+        <!-- DataTables  & Plugins -->
+        <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+        <script src="../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+        <script src="../plugins/jszip/jszip.min.js"></script>
+        <script src="../plugins/pdfmake/pdfmake.min.js"></script>
+        <script src="../plugins/pdfmake/vfs_fonts.js"></script>
+        <script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+        <script src="../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+        <script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+        <!-- custom js -->
+        <script src="../js/custom.js"></script>
+        <script>
+            $(function () {
+                           $("#example1").DataTable({
+                           "responsive": true, "lengthChange": false, "autoWidth": false,
+                           "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+                         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                  "paging": true,
+                  "lengthChange": false,
+                  "searching": false,
+                  "ordering": true,
+                  "info": true,
+                  "autoWidth": false,
+                  "responsive": true,
+                language: {
+                            paginate: {
+                                    previous: '<i class="fas fa-chevron-left"></i>',
+                                    next:     '<i class="fas fa-chevron-right"></i>'
+                                    },
+                                    }          
+              });
+            });
+</script>
+</body>
+
+</html>

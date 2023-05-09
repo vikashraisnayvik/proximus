@@ -1,0 +1,17 @@
+:root {
+    --dark-color: #000000;
+    --light-color: #fff;
+
+}
+
+.login-box,
+.register-box {
+    width: 600px !important;
+}
+
+.main-btn {
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid var(--dark-color);
+
+}

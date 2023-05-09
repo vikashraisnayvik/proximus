@@ -1,0 +1,27 @@
+:root {
+    --dark-color: #000000;
+    --light-color: #fff;
+    --font-22: 22px;
+
+}
+
+.login-page {
+    background: url('');
+}
+
+.login-box,
+.register-box {
+    width: 500px !important;
+}
+
+.main-btn {
+    width: 100%;
+    font-size: var(--font-22) !important;
+    border: 2px solid var(--dark-color) !important;
+    border-radius: 0 !important;
+}
+
+input {
+    font-size: var(--font-22) !important;
+    padding: 10px 20px !important;
+}

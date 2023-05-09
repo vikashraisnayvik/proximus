@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --dark-color: #000000;
+    --light-color: #fff;
+    --border-color: #707070;
+    --dropdown-color: #D1D1D1;
+    --font-22: 22px;
+
+}
+
+.dark-text {
+    color: var(--dark-color);
+}
+
+.input-border {
+    border: 1px solid var(--dark-color) !important;
+}
+
+.font-22 {
+    font-size: var(--font-22) !important;
+}
+
+.font-40 {
+    font-size: 40px;
+}
+
+.input-padding {
+    padding: 2px 8px 0px 8px !important;
+}
+
+.login-page {
+    background: linear-gradient(rgba(84, 39, 145, 0.45),
+            rgba(84, 39, 145, 0.45)), url('../assests/background-img.png') no-repeat;
+    background-size: cover;
+}
+
+.login-box,
+.register-box {
+    width: 500px !important;
+}
+
+.main-btn {
+    width: 100%;
+    font-size: var(--font-22) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: .25rem !important;
+}
+
+.login-card-body .form-control {
+    font-size: var(--font-22) !important;
+    padding: 23px 21px !important;
+    color: var(--dark-color) !important;
+}
+
+.form-control::placeholder {
+    color: var(--dark-color) !important;
+}
+
+.search_btn {
+    background: var(--light-color);
+}
+
+.login-logo img {
+    -webkit-animation: spin 8s linear infinite;
+    -moz-animation: spin 8s linear infinite;
+    animation: spin 8s linear infinite;
+    margin-bottom: 30px;
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.brand_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+.brand_logo img {
+    height: 50px;
+    width: 100px;
+}
+
+.table thead th {
+    vertical-align: top !important;
+    border-bottom: 0px !important;
+    border-top: 0;
+    font-weight: 400;
+}
+
+.table thead th:nth-last-child(1)::before {
+    content: unset !important;
+}
+
+.table thead th:nth-last-child(1)::after {
+    content: unset !important;
+}
+
+.table thead th:nth-child(1) {
+    font-weight: 600;
+}
+
+.table thead th:nth-child(2) {
+    font-weight: 600;
+}
+
+.table tbody tr td:nth-last-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* select options css */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    padding: 0 !important;
+}
+
+.custom-select select {
+    display: none;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    background: url('../assests/down-arrow.svg') no-repeat;
+    height: 15px;
+    width: 25px;
+    right: 10px;
+    top: 14px;
+
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    transform: rotate(180deg);
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: var(--dark-color);
+    cursor: pointer;
+    user-select: none;
+    font-size: var(--input-font);
+    padding: 2px 8px 0px 8px !important;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.custom-select {
+    background: none !important;
+    border: 1px solid var(--border-color) !important;
+    height: 100% !important;
+    border-radius: 0px !important;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: var(--dropdown-color);
+    border: 1px solid var(--border-color) !important;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-items div {
+    border: 1px solid var(--border-color) !important;
+    display: flex;
+    justify-content: center;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* select options css end */
+.search_btn input {
+    font-size: 18px !important;
+}
+
+/* artist css */
+.artist-btn {
+    width: 100%;
+    height: 100%;
+    font-size: 18px !important;
+    font-weight: 400;
+    border-radius: 0 !important;
+}
+
+.pagination {
+    justify-content: flex-end !important;
+}
+
+.page-link {
+    font-size: 20px !important;
+    color: var(--dark-color) !important;
+}
