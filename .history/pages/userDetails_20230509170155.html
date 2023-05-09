@@ -96,7 +96,7 @@
                         </div><!-- /.row -->
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1> Edit user : Name</h1>
+                                <h1>User : Name</h1>
                             </div>
                         </div>
                     </div><!-- /.container-fluid -->
@@ -108,181 +108,97 @@
                         <div class="col-md-3">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <button type="button" class="main-btn" data-toggle="modal"
-                                        data-target="#exampleModal">Edit user</button>
+                                    <button type="button" class="main-btn" data-toggle="modal" data-target="#exampleModal">
+                                        User details
+                                    </button>
                                 </div>
                             </div>
-                            <!-- edit user popup start -->
+                            <!--user details popup  start -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header border-0">
-                                            <h5 class="modal-title" id="exampleModalLabel">Edit user</h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">User details</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <form>
-                                                <div class="form-group">
-                                                    <div class="input-group input-group-lg input_search">
-                                                        <input type="text" class="form-control form-control-lg"
-                                                            placeholder="User Name" value="User name">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-lg btn-default">
-                                                                <img src="../assests/edit.svg" alt="" width="17">
-                                                            </button>
-                                                        </div>
+                                            <div class="card card-primary">
+                                                <div class="card-body">
+                                                    <div class="form-group">
+                                                        <label for="inputName">User Name</label>
+                                                        <input type="text" id="inputName" class="form-control"
+                                                            value="User Name" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputProjectLeader">E-mail</label>
+                                                        <input type="email" id="inputProjectLeader" class="form-control"
+                                                            value="User@gmail.com" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputProjectLeader">Phone</label>
+                                                        <input type="tel" id="inputProjectLeader" class="form-control"
+                                                            value="+143434343" readonly>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <div class="input-group input-group-lg input_search">
-                                                        <input type="email" class="form-control form-control-lg"
-                                                            placeholder="User@gmail.com" value="User@gmail.com">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-lg btn-default">
-                                                                <img src="../assests/edit.svg" alt="" width="17">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group input-group-lg input_search">
-                                                        <input type="tel" class="form-control form-control-lg"
-                                                            placeholder="User Name" value="+123566686">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-lg btn-default">
-                                                                <img src="../assests/edit.svg" alt="" width="17">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
+                                                <!-- /.card-body -->
+                                            </div>
                                             <div class="row justify-content-center">
                                                 <div class="col-md-6"> <button class="main-btn"><a href="edit-user.html"
-                                                            class="text-light">Save</a></button></div>
+                                                            class="text-light">Edit user</a></button></div>
                                                 <div class="col-md-6"> <button class="main-btn bg-danger"><a href=""
                                                             class="text-light">Delete user</a></button></div>
                                             </div>
+                                            <!-- /.card -->
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <!-- edit user popup end -->
+                            <!-- user details popup end -->
+
                         </div>
                         <div class="col-md-12 mt-4">
                             <div class="card card-secondary">
                                 <div class="card-body">
-                                      <p class="">Gallery</p>
-                                    <div class="row">
+                                    <div class="row user_details_gallery">
                                         <div class="col-sm-2">
-                                            <div class="user_details_gallery">
+                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
                                                 <img src="/assests/user-1.jpg" class="img-fluid mb-2"
                                                     alt="white sample" />
-                                            </div>
-                                            <div class=" justify-content-center row user_icon btn-group-sm">
-                                                <div class="col-3">
-                                                    <a href="#" class="btn secondary-color">
-                                                        <img src="../assests/edit-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#" class="btn btn-danger">
-                                                        <img src="../assests/delete-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-2">
-                                            <div class="user_details_gallery">
+                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
                                                 <img src="/assests/user-2.jpg" class="img-fluid mb-2"
                                                     alt="white sample" />
-                                            </div>
-                                            <div class=" justify-content-center user_icon row btn-group-sm">
-                                                <div class="col-3">
-                                                    <a href="#" class="btn secondary-color">
-                                                        <img src="../assests/edit-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#" class="btn btn-danger">
-                                                        <img src="../assests/delete-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-2">
-                                            <div class="user_details_gallery">
+                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
                                                 <img src="/assests/user-3.jpg" class="img-fluid mb-2"
                                                     alt="white sample" />
-                                            </div>
-                                            <div class=" justify-content-center user_icon row btn-group-sm">
-                                                <div class="col-3">
-                                                    <a href="#" class="btn secondary-color">
-                                                        <img src="../assests/edit-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#" class="btn btn-danger">
-                                                        <img src="../assests/delete-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-2">
-                                            <div class="user_details_gallery" href="/assests/user-1.jpg">
+                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
                                                 <img src="/assests/user-1.jpg" class="img-fluid mb-2"
                                                     alt="white sample" />
-                                            </div>
-                                            <div class=" justify-content-center user_icon row btn-group-sm">
-                                                <div class="col-3">
-                                                    <a href="#" class="btn secondary-color">
-                                                        <img src="../assests/edit-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#" class="btn btn-danger">
-                                                        <img src="../assests/delete-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-2">
-                                            <div class="user_details_gallery">
+                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
                                                 <img src="/assests/user-1.jpg" class="img-fluid mb-2"
                                                     alt="white sample" />
-                                            </div>
-                                            <div class=" justify-content-center user_icon row btn-group-sm">
-                                                <div class="col-3">
-                                                    <a href="#" class="btn secondary-color">
-                                                        <img src="../assests/edit-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#" class="btn btn-danger">
-                                                        <img src="../assests/delete-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                         <div class="col-sm-2">
-                                            <div class="user_details_gallery">
+                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
                                                 <img src="/assests/user-1.jpg" class="img-fluid mb-2"
                                                     alt="white sample" />
-                                            </div>
-                                            <div class=" justify-content-center user_icon row btn-group-sm">
-                                                <div class="col-3">
-                                                    <a href="#" class="btn secondary-color">
-                                                        <img src="../assests/edit-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                                <div class="col-3">
-                                                    <a href="#" class="btn btn-danger">
-                                                        <img src="../assests/delete-light.svg" alt="" width="20">
-                                                    </a>
-                                                </div>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -307,6 +223,7 @@
         <script src="../plugins/jquery/jquery.min.js"></script>
         <!-- Bootstrap 4 -->
         <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
         <!-- AdminLTE App -->
         <script src="../dist/js/adminlte.min.js"></script>
         <script src="../js/custom.js"></script>

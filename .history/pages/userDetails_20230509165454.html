@@ -4,30 +4,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>AdminLTE 3 | Dashboard</title>
-
+        <title>user details</title>
         <link rel="stylesheet" href="../css/style.css">
         <!-- Google Font: Source Sans Pro -->
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-        <!-- Ionicons -->
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-        <!-- Tempusdominus Bootstrap 4 -->
-        <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-        <!-- iCheck -->
-        <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-
+        <!-- Theme style -->
         <link rel="stylesheet" href="../dist/css/adminlte.min.css">
-        <!-- overlayScrollbars -->
-        <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
     </head>
 
-    <body class=" hold-transition sidebar-mini layout-fixed">
+    <body class="hold-transition sidebar-mini">
+        <!-- Site wrapper -->
         <div class="wrapper">
-       <!-- Main Sidebar Container -->
+
+            <!-- Main Sidebar Container -->
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <!-- Brand Logo -->
                 <div class="brand_logo">
@@ -97,101 +90,117 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0 font-40 dash_title">Dashboard</h1>
+                                <h1 class="m-0 font-40 font-weight-bold d-flex align-items-center"><a href="user.html" class="mr-1 text-dark"><i class="fas fa-chevron-left"></i></a>Dashboard</h1>
                             </div><!-- /.col -->
                         </div><!-- /.row -->
+                        <div class="row mb-2">
+                            <div class="col-sm-6">
+                                <h1>User : Name</h1>
+                            </div>
+                        </div>
                     </div><!-- /.container-fluid -->
                 </div>
-                <!-- /.content-header -->
 
                 <!-- Main content -->
                 <section class="content">
-                    <div class="container-fluid">
-                        <div class="row mb-3 justify-content-between align-items-center">
-                            <div class="col-2">
-                                <p class="font-22 font-weight-bold mb-0">Gallery</p>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="row justify-content-center">
+                                <div class="col-md-6"> <button class="main-btn"><a href="edit-user.html" class="text-light">Edit user</a></button></div>
                             </div>
-                            <div class="col-2">
-                                 <button class="btn input-border border-radius main-btn"><a href="" class="text-light">Export images</a></button>
+                            <div class="card card-primary">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="inputName">User Name</label>
+                                        <input type="text" id="inputName" class="form-control" value="User Name" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputProjectLeader">E-mail</label>
+                                        <input type="email" id="inputProjectLeader" class="form-control"
+                                            value="User@gmail.com" readonly>
+                                    </div>
+                                      <div class="form-group">
+                                        <label for="inputProjectLeader">Phone</label>
+                                        <input type="tel" id="inputProjectLeader" class="form-control"
+                                            value="+143434343" readonly>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
                             </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-6"> <button class="main-btn"><a href="edit-user.html" class="text-light">Edit user</a></button></div>
+                                 <div class="col-md-6"> <button class="main-btn bg-danger"><a href="" class="text-light">Delete user</a></button></div>
+                            </div>
+                            <!-- /.card -->
                         </div>
-
-                        <!-- user gallery section start -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card card-primary">
-                                    <div class="card-body">
-                                        <div class="row image_gallery">
+                        <div class="col-md-12 mt-4">
+                            <div class="card card-secondary">
+                                <div class="card-body">
+                                     <div class="row user_details_gallery">
                                             <div class="col-sm-2">
                                                 <a data-fancybox="gallery" href="/assests/user-1.jpg" >
                                                     <img src="/assests/user-1.jpg"
-                                                        class="img-fluid mb-2" alt="white sample" />
-                                                    <p class="text-dark text-center font-22">User name</p>    
+                                                        class="img-fluid mb-2" alt="white sample" />  
                                                 </a>
                                             </div>
                                             <div class="col-sm-2">
                                                 <a data-fancybox="gallery" href="/assests/user-1.jpg" >
                                                     <img src="/assests/user-2.jpg"
-                                                        class="img-fluid mb-2" alt="white sample" />
-                                                    <p class="text-dark text-center font-22">User name</p>    
+                                                        class="img-fluid mb-2" alt="white sample" />   
                                                 </a>
                                             </div>
                                             <div class="col-sm-2">
                                                 <a data-fancybox="gallery" href="/assests/user-1.jpg" >
                                                     <img src="/assests/user-3.jpg"
-                                                        class="img-fluid mb-2" alt="white sample" />
-                                                    <p class="text-dark text-center font-22">User name</p>    
+                                                        class="img-fluid mb-2" alt="white sample" />   
                                                 </a>
                                             </div>
                                             <div class="col-sm-2">
                                                 <a data-fancybox="gallery" href="/assests/user-1.jpg" >
                                                     <img src="/assests/user-1.jpg"
-                                                        class="img-fluid mb-2" alt="white sample" />
-                                                    <p class="text-dark text-center font-22">User name</p>    
+                                                        class="img-fluid mb-2" alt="white sample" />      
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a data-fancybox="gallery" href="/assests/user-1.jpg" >
+                                                    <img src="/assests/user-1.jpg"
+                                                        class="img-fluid mb-2" alt="white sample" />      
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a data-fancybox="gallery" href="/assests/user-1.jpg" >
+                                                    <img src="/assests/user-1.jpg"
+                                                        class="img-fluid mb-2" alt="white sample" />      
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
                                 </div>
-                                <div>
-                                <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                            <li class="page-item"><a class="page-link" href="#"><img src="../assests/left-arrow.svg" alt=""></a></li>
-                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item"><a class="page-link" href="#"><img src="../assests/right-arrow.svg" alt=""></a></li>
-                                        </ul>
-                                </nav>
-                                </div>
+                                <!-- /.card-body -->
                             </div>
+                            <!-- /.card -->
+                            <!-- /.card -->
+                                <div class="row justify-content-center">
+                                 <div class="col-2">
+                                    <button class="main-btn">Load more</button>
+                                 </div>
+                                </div>
                         </div>
-                        <!-- user gallery section end -->
-                    </div><!-- /.container-fluid -->
+                    </div>   
                 </section>
                 <!-- /.content -->
             </div>
-            <!-- /.content-wrapper -->
-
         </div>
         <!-- ./wrapper -->
 
         <!-- jQuery -->
         <script src="../plugins/jquery/jquery.min.js"></script>
-        <!-- jQuery UI 1.11.4 -->
-        <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
-        <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
         <!-- Bootstrap 4 -->
         <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-
-        <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
         <!-- AdminLTE App -->
-        <script src="../dist/js/adminlte.js"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
-        <!-- custom js -->
+        <script src="../dist/js/adminlte.min.js"></script>
         <script src="../js/custom.js"></script>
 
-        </body>
+    </body>
 
 </html>
