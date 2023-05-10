@@ -7,7 +7,7 @@
         <title>AdminLTE 3 | Dashboard</title>
 
         <link rel="stylesheet" href="../css/style.css">
-         <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
+        <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
         <!-- Google Font: Source Sans Pro -->
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -111,7 +111,7 @@
                 <!-- Main content -->
                 <section class="content">
                     <div class="container-fluid">
-                         <div class="row mb-3 align-items-center">
+                        <div class="row mb-3 align-items-center">
                             <div class="col-6">
                                 <p class="font-22 font-weight-normal mb-0">User</p>
                             </div>
@@ -163,27 +163,168 @@
                                                     <th>Phone</th>
                                                     <th>Date/time</th>
                                                     <th>Gallery</th>
+                                                    <th>Edit</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                
+
                                                 <tr>
                                                     <td>33</td>
-                                                    <td class="user_edit">
-                                                        <a href="userDetails.html" class="text-dark">Michael steurs</a>
+                                                    <td>
+                                                        Michael steurs
                                                     </td>
                                                     <td>michael@pixelstudio.be</td>
                                                     <td> +32121212</td>
                                                     <td> 06/04/2023 <br>10:46</td>
-                                                    <td> 
+                                                    <td>
                                                         <div class="download_icon">
-                                                        <img src="../assests/download.svg" alt="" width="25">
+                                                            <button type="button" class="btn p-0" data-toggle="modal"
+                                                                data-target="#viewGallery">
+                                                                <img src="../assests/view.png" alt="" width="25">
+                                                            </button>
+                                                            <button type="button" class="btn p-0">
+                                                                <img src="../assests/download.svg" alt="" width="25">
+                                                            </button>
                                                         </div>
                                                     </td>
-                                                </tr>   
+                                                    <td>
+                                                        <div class="download_icon">
+                                                            <Button type="button" class="btn" data-toggle="modal"
+                                                                data-target="#exampleModal">
+                                                                <img src="../assests/edit.svg" alt="" width="20">
+                                                            </Button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
+                                    <!-- edit user popup start-->
+                                    <div class="modal  fade" id="exampleModal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Edit user</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <div class="input-group input-group-lg input_search">
+                                                                <input type="text" class="form-control form-control-lg"
+                                                                    placeholder="User Name" value="User name">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-lg btn-default">
+                                                                        <img src="../assests/edit.svg" alt=""
+                                                                            width="17">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group input-group-lg input_search">
+                                                                <input type="email" class="form-control form-control-lg"
+                                                                    placeholder="User@gmail.com" value="User@gmail.com">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-lg btn-default">
+                                                                        <img src="../assests/edit.svg" alt=""
+                                                                            width="17">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-group input-group-lg input_search">
+                                                                <input type="tel" class="form-control form-control-lg"
+                                                                    placeholder="User Name" value="+123566686">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-lg btn-default">
+                                                                        <img src="../assests/edit.svg" alt=""
+                                                                            width="17">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="row justify-content-center">
+                                                        <div class="col-md-6"> <button class="main-btn"><a
+                                                                    href="edit-user.html"
+                                                                    class="text-light">Save</a></button></div>
+                                                        <div class="col-md-6"> <button class="main-btn bg-danger"><a
+                                                                    href="" class="text-light">Delete user</a></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- edit user popup start-->
+
+                                    <!-- gallery popup start -->
+                                    <div class="modal gallery_popup fade" id="viewGallery" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Gallery</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body pt-0">
+                                                    <div class="row user_details_gallery">
+                                                        <div class="col-lg-3 col-md-3 col-sm-2">
+                                                            <div data-fancybox="gallery" href="/assests/user-1.jpg">
+                                                                <img src="/assests/user-1.jpg" class="img-fluid mb-2"
+                                                                    alt="white sample" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-lg-3 col-sm-2">
+                                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
+                                                                <img src="/assests/user-2.jpg" class="img-fluid mb-2"
+                                                                    alt="white sample" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-3  col-md-3 col-sm-2">
+                                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
+                                                                <img src="/assests/user-3.jpg" class="img-fluid mb-2"
+                                                                    alt="white sample" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-3  col-sm-2">
+                                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
+                                                                <img src="/assests/user-1.jpg" class="img-fluid mb-2"
+                                                                    alt="white sample" />
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-3 col-lg-3 col-sm-2">
+                                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
+                                                                <img src="/assests/user-1.jpg" class="img-fluid mb-2"
+                                                                    alt="white sample" />
+                                                            </a>
+                                                        </div>
+                                                        <div class=" col-md-3 col-lg-3 col-sm-2">
+                                                            <a data-fancybox="gallery" href="/assests/user-1.jpg">
+                                                                <img src="/assests/user-1.jpg" class="img-fluid mb-2"
+                                                                    alt="white sample" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3 justify-content-center">
+                                                        <div class="col-2">
+                                                            <button class="main-btn">Load more</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- gallery popup end -->
                                     <!-- /.card-body -->
                                 </div>
                                 <!-- /.card -->
@@ -203,7 +344,7 @@
         <script src="../plugins/jquery/jquery.min.js"></script>
         <!-- jQuery UI 1.11.4 -->
         <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
-         <script src="../plugins/select2/js/select2.full.min.js"></script>
+        <script src="../plugins/select2/js/select2.full.min.js"></script>
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
         <!-- Bootstrap 4 -->
         <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -230,28 +371,28 @@
         <script src="../js/custom.js"></script>
         <script>
             $(function () {
-                   $('.select2').select2()
-                           $("#example1").DataTable({
-                           "responsive": true, "lengthChange": false, "autoWidth": false,
-                           "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-                         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-            $('#example2').DataTable({
-                  "paging": true,
-                  "lengthChange": false,
-                  "searching": false,
-                  "ordering": true,
-                  "info": true,
-                  "autoWidth": false,
-                  "responsive": true,
-                language: {
-                            paginate: {
-                                    previous: '<i class="fas fa-chevron-left"></i>',
-                                    next:     '<i class="fas fa-chevron-right"></i>'
-                                    },
-                                    }          
-              });
+                $('.select2').select2()
+                $("#example1").DataTable({
+                    "responsive": true, "lengthChange": false, "autoWidth": false,
+                    "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+                }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+                $('#example2').DataTable({
+                    "paging": true,
+                    "lengthChange": false,
+                    "searching": false,
+                    "ordering": true,
+                    "info": true,
+                    "autoWidth": false,
+                    "responsive": true,
+                    language: {
+                        paginate: {
+                            previous: '<i class="fas fa-chevron-left"></i>',
+                            next: '<i class="fas fa-chevron-right"></i>'
+                        },
+                    }
+                });
             });
-</script>
-</body>
+        </script>
+    </body>
 
 </html>

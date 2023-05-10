@@ -391,9 +391,18 @@
     justify-content: center;
     align-items: center;
     height: 50px;
+    gap: 15px;
 }
 
 table.dataTable>thead .sorting_asc:before,
 table.dataTable>thead .sorting_desc:after {
     color: var(--secondary-color) !important;
+}
+
+.gallery_popup .modal-dialog {
+    max-width: 800px !important;
+}
+
+.gallery_popup .user_details_gallery img {
+    height: 184px !important;
 }
